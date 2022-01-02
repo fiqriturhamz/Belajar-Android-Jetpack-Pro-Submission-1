@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activity.DetailTvShow">
+
+        <ImageView
+            android:id="@+id/iv_tvshows"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/threeHundred_dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/poster"
+            android:src="@drawable/avengers1" />
+
+        <TextView
+            android:id="@+id/tv_tvshows"
+            style="@style/Movie"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:textSize="@dimen/twentyFour_sp" />
+
+        <TextView
+            android:id="@+id/tv_category_tvshows"
+            style="@style/Category"
+            android:layout_marginTop="@dimen/four_dp"
+            android:text="@string/tv_category"
+            android:textSize="@dimen/twelve_sp"
+            android:textStyle="italic" />
+
+        <TextView
+
+            android:id="@+id/tv_rating_tv_shows"
+            style="@style/Rating"
+            android:layout_marginStart="@dimen/eight_sp"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            android:textSize="@dimen/sixteen_sp"
+            app:drawableStartCompat="@drawable/ic_star" />
+
+        <TextView
+            style="@style/Overview"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:text="@string/overview"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:id="@+id/tv_des_tvshows"
+            style="@style/Description"
+            android:layout_marginTop="@dimen/four_dp"
+            android:text="@string/tv_des" />
+
+    </LinearLayout>
+</ScrollView>
+

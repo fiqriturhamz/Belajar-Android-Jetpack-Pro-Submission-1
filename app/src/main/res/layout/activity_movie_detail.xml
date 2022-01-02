@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/poster" />
+
+        <TextView
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:id="@+id/tv_movie"
+            style="@style/Movie"
+            android:layout_marginStart="@dimen/twelve_sp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            android:textColor="@color/merahmuda"
+            android:textSize="@dimen/twentyFour_sp" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/Category"
+            android:layout_marginTop="@dimen/four_dp"
+            android:text="@string/tv_category"
+            android:textSize="@dimen/twelve_sp"
+            android:layout_marginStart="@dimen/twelve_sp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            android:textStyle="italic" />
+        <TextView
+
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:id="@+id/tv_rating"
+            style="@style/Rating"
+            android:layout_marginStart="@dimen/twelve_sp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            app:drawableStartCompat="@drawable/ic_star"
+            android:textSize="@dimen/sixteen_sp" />
+
+
+        <TextView
+            style="@style/Overview"
+            android:layout_marginTop="@dimen/twelve_sp"
+            android:text="@string/overview"
+            android:layout_marginStart="@dimen/twelve_sp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            style="@style/Description"
+            android:layout_marginTop="@dimen/four_dp"
+            android:layout_marginStart="@dimen/twelve_sp"
+            android:layout_marginEnd="@dimen/twelve_sp"
+            android:text="@string/tv_des"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </LinearLayout>
+</ScrollView>
+
